@@ -15,7 +15,6 @@ public class ContextualMessageController : MonoBehaviour
 
         canvasGroup.alpha = 0;
 
-      StartCoroutine(ShowMessage("Testing", 2));
     }
 
     // Update is called once per frame
