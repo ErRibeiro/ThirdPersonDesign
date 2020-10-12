@@ -29,7 +29,18 @@ public class ContextualMessageController : MonoBehaviour
         canvasGroup.alpha = 0;
     }
    
-    
-       
-    
+    private void OnContextualMessageTriggered()
+    {
+        StartCoroutine(ShowMessage("Testing", 2));
+
+    }
+    private void OnEnable()
+    {
+        ContextualMessageTrigger.ContextualMessageTriggered += OnContextualMessageTriggered;
+    }
+    private void OnDisable()
+    {
+        
+    }
+
 }
