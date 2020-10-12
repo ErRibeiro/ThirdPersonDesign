@@ -1,11 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ContextualMessageTrigger : MonoBehaviour
 {
-    public delegate void ContextualMessageTriggerAction();
-    public static event ContextualMessageTriggerAction ContextualMessageTriggered;
+    [SerializeField]
+    private string message = "Default Message";
+    [SerializeField]
+    private float messageDuration = 5f;
+    public static event Action<string, float> ContextualMessageTriggered;
 
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
@@ -14,7 +18,7 @@ public class ContextualMessageTrigger : MonoBehaviour
         {
             if (ContextualMessageTriggered != null)
             {
-                ContextualMessageTriggered.Invoke();
+                ContextualMessageTriggered.Invoke(message, messageDuration);
             }
             
         }

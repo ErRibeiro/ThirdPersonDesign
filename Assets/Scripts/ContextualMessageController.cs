@@ -17,11 +17,6 @@ public class ContextualMessageController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private IEnumerator ShowMessage(string message, float duration) {
         canvasGroup.alpha = 1;
         messageText.text = message;
@@ -29,9 +24,9 @@ public class ContextualMessageController : MonoBehaviour
         canvasGroup.alpha = 0;
     }
    
-    private void OnContextualMessageTriggered()
+    private void OnContextualMessageTriggered(string message, float messageDuration)
     {
-        StartCoroutine(ShowMessage("Testing", 2));
+        StartCoroutine(ShowMessage(message, messageDuration));
 
     }
     private void OnEnable()
@@ -40,7 +35,7 @@ public class ContextualMessageController : MonoBehaviour
     }
     private void OnDisable()
     {
-        
+        ContextualMessageTrigger.ContextualMessageTriggered -= OnContextualMessageTriggered;
     }
 
-}
+ }
