@@ -18,13 +18,15 @@ public class RigidbodyCharacterController : MonoBehaviour
     private new Rigidbody rigidbody;
     private Vector2 input;
     private new Collider collider;
-
+    private readonly int movementInputAnimParam = Animator.StringToHash("MoveInput");
+    private Animator animator;
     [SerializeField]
     private PhysicMaterial stoppingPhysicsMaterial, movingPhysicsMaterial;
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
         collider = GetComponent<Collider>();
+        animator = GetComponentInChildren<Animator>();
     }
     private void FixedUpdate()
     {
@@ -94,5 +96,7 @@ public class RigidbodyCharacterController : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         input = context.ReadValue<Vector2>();
+        animator.SetFloat(movementInputAnimParam, input.magnitude);
+        Debug.Log(movementInputAnimParam);
     }
 }

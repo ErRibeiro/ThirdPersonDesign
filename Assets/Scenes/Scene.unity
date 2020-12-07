@@ -686,8 +686,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52759536}
-  m_LocalRotation: {x: -0.009049988, y: 0.9678284, z: 0.035179537, w: 0.24897529}
-  m_LocalPosition: {x: 8.783661, y: 2.29, z: -15.942423}
+  m_LocalRotation: {x: -0.009049986, y: 0.9678284, z: 0.035179533, w: 0.24897526}
+  m_LocalPosition: {x: 8.783661, y: 1.84, z: -15.942423}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -864,7 +864,7 @@ MonoBehaviour:
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
-    m_InvertInput: 1
+    m_InvertInput: 0
     m_MinValue: -180
     m_MaxValue: 180
     m_Wrap: 1
@@ -906,7 +906,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116201436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.783661, y: 2.29, z: -15.942423}
+  m_LocalPosition: {x: 8.783661, y: 1.84, z: -15.942423}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 815409543}
@@ -1354,7 +1354,7 @@ MonoBehaviour:
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
-    m_InvertInput: 1
+    m_InvertInput: 0
     m_MinValue: -180
     m_MaxValue: 180
     m_Wrap: 1
@@ -1446,7 +1446,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255134198}
-  m_LocalRotation: {x: -0.004531716, y: 0.9683074, z: 0.017615935, w: 0.2490985}
+  m_LocalRotation: {x: -0.0045317216, y: 0.9683074, z: 0.017615935, w: 0.24909846}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1553,7 +1553,7 @@ MonoBehaviour:
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
-    m_InvertInput: 1
+    m_InvertInput: 0
     m_MinValue: -180
     m_MaxValue: 180
     m_Wrap: 1
@@ -3093,7 +3093,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815409541}
-  m_LocalRotation: {x: 0.0000000104527675, y: 0.9684676, z: 0.0000000026889893, w: 0.24913971}
+  m_LocalRotation: {x: 0.000000022704361, y: 0.9684676, z: 0.00000000584073, w: 0.24913971}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3363,7 +3363,7 @@ MonoBehaviour:
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
-    m_InvertInput: 1
+    m_InvertInput: 0
     m_MinValue: -180
     m_MaxValue: 180
     m_Wrap: 1
@@ -6037,7 +6037,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077344591}
-  m_LocalRotation: {x: -0.009050022, y: 0.96782845, z: 0.035179537, w: 0.24897532}
+  m_LocalRotation: {x: -0.009050031, y: 0.96782845, z: 0.035179526, w: 0.24897529}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6157,7 +6157,6 @@ GameObject:
   - component: {fileID: 2095908748}
   - component: {fileID: 2095908747}
   - component: {fileID: 2095908753}
-  - component: {fileID: 2095908750}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6214,25 +6213,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &2095908750
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095908746}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &2095908752
 Transform:
   m_ObjectHideFlags: 0
@@ -6241,7 +6221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095908746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.231363, y: 2.29, z: -18.57}
+  m_LocalPosition: {x: 10.231363, y: 1.84, z: -18.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1477015183}
@@ -6278,7 +6258,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2095908747}
         m_MethodName: OnMove
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
