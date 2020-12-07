@@ -33,15 +33,15 @@ public class RigidbodyCharacterController : MonoBehaviour
 
         UpdatePhysicsMaterial();
         Move(cameraRelativeInputDirection);
-        RotateToFaceMoveInputDirection();
+        RotateToFaceMoveInputDirection(cameraRelativeInputDirection);
 
     }
 
-    private void RotateToFaceMoveInputDirection()
+    private void RotateToFaceMoveInputDirection(Vector3 cameraRelativeInputDirection)
     {
-        if (moveDirection.magnitude > 0)
+        if (cameraRelativeInputDirection.magnitude > 0)
         {
-            var targetRotation = Quaternion.LookRotation(moveDirection);
+            var targetRotation = Quaternion.LookRotation(cameraRelativeInputDirection);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, turnSpeed);
         }
     }
